@@ -1,0 +1,58 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1548318423123" stop="1548318423201">
+  <name>test_login</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1548318423123" status="passed" stop="1548318423129">
+      <name>test_one</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="2616-MainThread"/>
+        <label name="host" value="PC-20181019HMFE"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1548318423131" status="failed" stop="1548318423201">
+      <name>test_login</name>
+      <failure>
+        <message>AssertionError: assert 0</message>
+        <stack-trace>@allure.step(title="测试登录流程")
+    def test_login():
+        allure.attach('登录', '输入用户名')
+        print('abc') #输入用户名
+    
+        allure.attach('登录', '输入密码')
+        print('abc')
+    
+        allure.attach('登录', '点击登录')
+        print('abc')
+&gt;       assert 0
+E       assert 0
+
+scripts\test_login.py:16: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="2616-MainThread"/>
+        <label name="host" value="PC-20181019HMFE"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1548318423133" status="failed" stop="1548318423139">
+          <name>测试登录流程</name>
+          <title>测试登录流程</title>
+          <attachments>
+            <attachment source="9ef9eb5f-584a-4d4f-9fae-7a40fbb4af16-attachment.txt" title="登录" type="text/plain"/>
+            <attachment source="e56f8c22-4629-46cf-9111-c7a664a3acbe-attachment.txt" title="登录" type="text/plain"/>
+            <attachment source="879d285f-cafe-4c1c-9434-f67648ed2033-attachment.txt" title="登录" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
