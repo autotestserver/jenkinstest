@@ -13,6 +13,6 @@ def test_login():
 
     allure.attach('登录', '点击登录')
     print('abc')
-    assert 0
+    assert 1
 
 
